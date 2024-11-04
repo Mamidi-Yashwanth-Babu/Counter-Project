@@ -1,0 +1,70 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #1a1a1d; /* Dark, shadowy background */
+    color: #d6b400; /* Gold-like text color */
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .counter {
+    font-size: 80px;
+    margin: 30px;
+    color: #d6b400; /* Same gold-like color as the heading */
+    text-shadow: 2px 2px #000;
+  }
+  
+  button {
+    font-size: 30px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    color: #1a1a1d; /* Dark text */
+    background-color: #d6b400; /* Gold-like button background */
+    box-shadow: 0 4px #004d00; /* Green shadow effect */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    box-shadow: 0 4px #003300; /* Darker green shadow for hover */
+  }
+  
+  button:active {
+    background-color: #367c39; /* Darker green for active state */
+    box-shadow: 0 2px #002200; /* Pressed shadow effect */
+  }
+  
+  /* Styles for the error message */
+  .error-message {
+    display: none; /* Hidden by default */
+    background-color: rgba(220, 20, 60, 0.9); /* Crimson background with transparency */
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeInOut 3s ease forwards;
+  }
+  
+  /* Keyframes for fade-in and fade-out animation */
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
